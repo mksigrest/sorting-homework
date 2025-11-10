@@ -13,8 +13,21 @@ namespace sortingHomework
             int[] array1 = new int[9] { -11, 12, -42, 0, 1, 90, 68, 6, -9 };
             int[] array2 = new int[9] { -11, 12, -42, 0, 1, 90, 68, 6, -9 };
 
-            Console.WriteLine("The contents of the array 'array1'");
+            Console.WriteLine("The contents of the array 'array1':");
             printArray(array1);
+
+            bubbleSort(array1);
+
+            Console.WriteLine("Array 1 after the sort:");
+            printArray(array1);
+
+            Console.WriteLine("The contents of the array 'array2':");
+            printArray(array2);
+
+            Array.Sort(array2);
+
+            Console.WriteLine("Array 2 after the sort:");
+            printArray(array2);
         }
 
         static void bubbleSort(int[] array)
