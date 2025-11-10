@@ -1,4 +1,5 @@
 ﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace sortingHomework
 {
@@ -13,20 +14,24 @@ namespace sortingHomework
             int[] array2 = new int[9] { -11, 12, -42, 0, 1, 90, 68, 6, -9 };
 
             Console.WriteLine("The contents of the array 'array1'");
-            for (int i = 0; i < array1.Length; i++)
-            {
-                Console.WriteLine(array1[i]);
-            }
+            printArray(array1);
         }
 
         static void bubbleSort(int[] array)
         {
             int n = array.Length;
+            for (int i = 0; i < n; i ++)
+            {
 
+            }
         }
 
         static void printArray(int[] array)
         {
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
 
         }
     }
