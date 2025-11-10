@@ -35,10 +35,9 @@ namespace sortingHomework
             int n = array.Length;
             for (int i = 0; i < n; i ++)
             {
-                bool s = false;
                 for (int j = 0; j < n - i - 1; j ++)
                 {
-                    if (array[i] > array[j + 1])
+                    if (array[j] > array[j + 1])
                     {
                         int k = array[j];
                         array[j] = array[j + 1];
@@ -46,7 +45,6 @@ namespace sortingHomework
                         s = true;
                     }
                 }
-                if (!s) break;
             }
         }
 
